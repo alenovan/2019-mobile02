@@ -42,13 +42,14 @@ public class MainActivity extends AppCompatActivity {
         } else if (number < random) {
             Toast.makeText(this, "Tebakan anda terlalu kecil!", Toast.LENGTH_SHORT).show();
         } else {
-            guess_button.setEnabled(false   );
+            guess_button.setEnabled(false);
             Toast.makeText(this, "Tebakan anda benar!. ", Toast.LENGTH_SHORT).show();
         }
     }
 
     public void handleReset(View view) {
         // TODO: Reset tampilan
+        guess_button.setEnabled(true);
         number_input.setText("");
 
     }
